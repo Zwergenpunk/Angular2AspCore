@@ -1,0 +1,7 @@
+﻿<div class="btn-group" *ngFor="let type of types">
+    <button class="btn" (click)="selectType(type)" [class.btn-success]="type == selectedType" [class.btn-info]="type != selectedType">{{type}}</button>
+</div>
+<button class="btn btn-info" (click)="resetType()">Alle</button>
+<div class="checkbox"><label><input type="checkbox" [(ngModel)]="showOnlyPossibleForNow" />Nur momentan mögliche Fänge anzeigen</label></div>
+
+<pet-list [type]="selectedType" [showOnlyPossibleForNow]="showOnlyPossibleForNow"></pet-list>

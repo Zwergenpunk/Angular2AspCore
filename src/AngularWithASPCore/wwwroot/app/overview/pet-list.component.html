@@ -1,0 +1,21 @@
+﻿<table class="table">
+    <tr>
+        <th>Nummer</th>
+        <th>Name</th>
+        <th>Typ</th>
+        <th>Ort</th>
+        <th>Tageszeit</th>
+        <th>Zeitraum</th>
+        <th>Sonderbedingung</th>
+    </tr>
+    <tr *ngFor="let pet of petList">
+        <td>{{pet.number}}</td>
+        <td>{{pet.name}}</td>
+        <td>{{pet.type}}</td>
+        <td>{{pet.place}}</td>
+        <td>{{pet.dayTime}}</td>
+        <td>{{pet.day}}</td>
+        <td>{{pet.specialRequirement}}</td>
+    </tr>
+</table>
+
